@@ -1038,13 +1038,38 @@ html {
     margin-top: 16px;
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     background: rgba(0, 240, 255, 0.06);
     border: 1px solid var(--border-cyan);
-    padding: 6px 14px;
+    padding: 8px 16px;
     border-radius: 8px;
     font-family: var(--font-code);
     font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s var(--ease-out);
+    user-select: none;
+}
+
+.footer-email-box:hover {
+    background: rgba(0, 240, 255, 0.12);
+    border-color: var(--cyan);
+    box-shadow: 0 0 16px rgba(0, 240, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.copy-badge {
+    font-size: 0.68rem;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 3px 8px;
+    border-radius: 4px;
+    color: var(--text-secondary);
+    transition: all 0.2s ease;
+}
+
+.footer-email-box.copied .copy-badge {
+    background: #10b981;
+    color: #030712;
+    font-weight: bold;
 }
 
 .email-label {

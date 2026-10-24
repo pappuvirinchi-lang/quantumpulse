@@ -9,7 +9,34 @@ document.addEventListener('DOMContentLoaded', () => {
     initPulseField();
     initVseprSandbox();
     initUgeShaderInspector();
+    initEmailCopyHelper();
 });
+
+/* ===================================================================
+   0. Smart Email Interaction (1-Click Copy + Fallback Mailto)
+   =================================================================== */
+function initEmailCopyHelper() {
+    const box = document.getElementById('copy-email-btn');
+    const badge = document.getElementById('copy-feedback');
+    const email = 'quantumpulsedevs@gmail.com';
+
+    if (!box || !badge) return;
+
+    box.addEventListener('click', (e) => {
+        // Copy directly to clipboard
+        navigator.clipboard.writeText(email).then(() => {
+            box.classList.add('copied');
+            badge.textContent = '✓ Copied to Clipboard!';
+            setTimeout(() => {
+                box.classList.remove('copied');
+                badge.textContent = '📋 Click to Copy';
+            }, 2500);
+        }).catch(() => {
+            // Fallback: open mail client
+            window.location.href = `mailto:${email}`;
+        });
+    });
+}
 
 /* ===================================================================
    1. Background Pulse Canvas (Atmospheric Stars & Field)
