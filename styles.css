@@ -1034,6 +1034,34 @@ html {
     line-height: 1.6;
 }
 
+.footer-email-box {
+    margin-top: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0, 240, 255, 0.06);
+    border: 1px solid var(--border-cyan);
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-family: var(--font-code);
+    font-size: 0.8rem;
+}
+
+.email-label {
+    color: var(--text-muted);
+    font-size: 0.72rem;
+}
+
+.footer-email-link {
+    color: var(--cyan);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-email-link:hover {
+    text-decoration: underline;
+}
+
 .footer-nav-col {
     display: flex;
     flex-direction: column;
