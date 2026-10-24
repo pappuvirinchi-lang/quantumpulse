@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuantumPulse | High-Performance Simulation & Interactive Systems</title>
+    <meta name="description" content="QuantumPulse is an independent deep-tech and game development lab engineering 3D scientific simulations, native game engines, and physics-driven interactive software from first principles.">
+    <meta name="keywords" content="QuantumPulse, Quantum Pulse Labs, Ultimate Chemistry Simulator, Ultimate Game Engine, UGE, Game Engines, C++, Unreal Engine 5, AI Chemistry, Interactive Simulation">
+    <meta name="author" content="QuantumPulse">
+
+    <!-- OpenGraph / Social Metadata -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="QuantumPulse | High-Performance Systems & Interactive Simulations">
+    <meta property="og:description" content="Engineering next-generation 3D scientific simulations, custom native game engines, and physics-driven software from first principles.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/pappuvirinchi-lang/ultimate-chemistry-sim/master/preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="QuantumPulse | High-Performance Systems & Interactive Simulations">
+    <meta name="twitter:description" content="Engineering next-generation 3D scientific simulations, custom native game engines, and physics-driven software from first principles.">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "QuantumPulse",
+      "url": "https://pappuvirinchi-lang.github.io/quantumpulse/",
+      "logo": "https://raw.githubusercontent.com/pappuvirinchi-lang/ultimate-chemistry-sim/master/preview.png",
+      "description": "Independent deep-tech & interactive systems studio engineering simulations, game engines, and neural AI tools.",
+      "sameAs": [
+        "https://github.com/pappuvirinchi-lang",
+        "https://virinchi9.itch.io"
+      ]
+    }
+    </script>
+
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Interactive Pulse Field Canvas -->
+    <canvas id="pulse-canvas"></canvas>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="brand">
+                <div class="quantum-symbol">
+                    <span class="orbit orbit-1"></span>
+                    <span class="orbit orbit-2"></span>
+                    <span class="pulse-center"></span>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">QuantumPulse</span>
+                    <span class="brand-badge">STUDIOS</span>
+                </div>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#projects">Ventures</a>
+                <a href="#philosophy">Philosophy</a>
+                <a href="#interactive-lab">Quantum Pulse Lab</a>
+                <a href="#ecosystem">Ecosystem</a>
+                <a href="#about">About</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="https://github.com/pappuvirinchi-lang" target="_blank" class="btn btn-nav">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-aurora"></div>
+        <div class="container hero-content">
+            <div class="studio-badge">
+                <span class="live-dot"></span> INDEPENDENT DEEP-TECH & INTERACTIVE SYSTEMS
+            </div>
+            <h1 class="hero-title">
+                Building The Impossible<br>
+                <span class="pulse-gradient">From First Principles.</span>
+            </h1>
+            <p class="hero-desc">
+                <strong>QuantumPulse</strong> is an autonomous engineering studio crafting reality-grade scientific simulations, custom native game engines, and neural AI physics. We engineer at the metal to blend mathematical rigor with immersive 3D technology.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                    Explore Studio Projects
+                </a>
+                <a href="#interactive-lab" class="btn btn-secondary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    Launch Interactive Lab
+                </a>
+            </div>
+
+            <!-- Studio Stat Counters -->
+            <div class="hero-metrics glass-panel">
+                <div class="metric-item">
+                    <span class="metric-val" data-target="100">100%</span>
+                    <span class="metric-label">Native & Offline First</span>
+                </div>
+                <div class="metric-sep"></div>
+                <div class="metric-item">
+                    <span class="metric-val">C++20 & UE5</span>
+                    <span class="metric-label">Core Tech Stack</span>
+                </div>
+                <div class="metric-sep"></div>
+                <div class="metric-item">
+                    <span class="metric-val">VSEPR & AI</span>
+                    <span class="metric-label">Physical Intelligence</span>
+                </div>
+                <div class="metric-sep"></div>
+                <div class="metric-item">
+                    <span class="metric-val">3+</span>
+                    <span class="metric-label">Active Flagships</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Portfolio -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-title-wrap">
+                <span class="sub-tag">VENTURE PORTFOLIO</span>
+                <h2>Flagship Systems & Projects</h2>
+                <p>Every QuantumPulse project is engineered without shortcuts — combining native performance, real-time math, and creative depth.</p>
+            </div>
+
+            <div class="project-showcase-list">
+                <!-- Project 1: Ultimate Chemistry Simulator -->
+                <div class="project-card glass-panel spotlight-cyan">
+                    <div class="project-card-header">
+                        <div class="project-identity">
+                            <span class="project-category">SCIENTIFIC SIMULATION & AI</span>
+                            <h3>Ultimate Chemistry Simulator</h3>
+                        </div>
+                        <span class="status-tag status-live">Live & Available</span>
+                    </div>
+                    <p class="project-summary">
+                        A real-time 3D molecular builder featuring VSEPR auto-relaxation, offline AI chemical reaction prediction, neural voice synthesis, and interactive gamified chemistry learning in Unreal Engine 5.
+                    </p>
+                    <div class="tech-pills">
+                        <span>Unreal Engine 5</span>
+                        <span>C++</span>
+                        <span>Local ChemAI</span>
+                        <span>VSEPR Dynamics</span>
+                        <span>Neural TTS</span>
+                        <span>Windows</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://pappuvirinchi-lang.github.io/ultimate-chemistry-sim/" target="_blank" class="btn btn-sm btn-accent">
+                            Visit Project Website ↗
+                        </a>
+                        <a href="https://virinchi9.itch.io/ultimate-chemistry-simulator" target="_blank" class="btn btn-sm btn-outline">
+                            Download on Itch.io ↗
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Ultimate Game Engine (UGE) -->
+                <div class="project-card glass-panel spotlight-purple">
+                    <div class="project-card-header">
+                        <div class="project-identity">
+                            <span class="project-category">ENGINE ARCHITECTURE</span>
+                            <h3>Ultimate Game Engine (UGE)</h3>
+                        </div>
+                        <span class="status-tag status-stealth">In Active Development</span>
+                    </div>
+                    <p class="project-summary">
+                        A clean-slate, high-performance native C++ 3D game engine and dockable editor suite. Features real-time viewport rendering, custom RHI, and a visual Blueprint-inspired node graph runtime.
+                    </p>
+                    <div class="tech-pills">
+                        <span>Modern C++20</span>
+                        <span>Custom Dockable Editor</span>
+                        <span>Visual Node Graph</span>
+                        <span>HLSL / RHI</span>
+                        <span>CMake</span>
+                        <span>Win64 Native</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="badge-stealth">Stealth Milestone: Phase 2 (Visual Scripting)</span>
+                    </div>
+                </div>
+
+                <!-- Project 3: Chemistry Warfare -->
+                <div class="project-card glass-panel spotlight-blue">
+                    <div class="project-card-header">
+                        <div class="project-identity">
+                            <span class="project-category">TACTICAL SIMULATION & COMBAT</span>
+                            <h3>Chemistry Warfare</h3>
+                        </div>
+                        <span class="status-tag status-concept">In Incubation</span>
+                    </div>
+                    <p class="project-summary">
+                        Next-generation tactical strategy and physics combat marrying real chemical kinetics, exothermic hazard modeling, and strategic battlefield manipulation.
+                    </p>
+                    <div class="tech-pills">
+                        <span>Chemical Kinetics</span>
+                        <span>Thermodynamic Physics</span>
+                        <span>Tactical Systems</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="badge-stealth">Incubating inside QuantumPulse Labs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engineering Philosophy -->
+    <section id="philosophy" class="section section-dark">
+        <div class="container">
+            <div class="section-title-wrap">
+                <span class="sub-tag">FOUNDATIONAL PILLARS</span>
+                <h2>The QuantumPulse Creed</h2>
+                <p>We reject bloatware and off-the-shelf black boxes. Here is how we build.</p>
+            </div>
+
+            <div class="philosophy-grid">
+                <div class="pillar-box glass-panel">
+                    <div class="pillar-num">01</div>
+                    <h4>First-Principles Thinking</h4>
+                    <p>Instead of copying conventional workflows, we dissect the core physics, mathematics, and memory bottlenecks to build the optimal solution from the atom up.</p>
+                </div>
+                <div class="pillar-box glass-panel">
+                    <div class="pillar-num">02</div>
+                    <h4>Direct Hardware Control</h4>
+                    <p>Uncapped native execution in C++ and direct GPU pipelines. Zero garbage collection freezes, zero cloud latency dependencies for local inference.</p>
+                </div>
+                <div class="pillar-box glass-panel">
+                    <div class="pillar-num">03</div>
+                    <h4>Scientific Rigor + Immersion</h4>
+                    <p>Simulations shouldn't look like dry spreadsheets, and games shouldn't have fake physics. We fuse scientific accuracy with real-time 3D visual fidelity.</p>
+                </div>
+                <div class="pillar-box glass-panel">
+                    <div class="pillar-num">04</div>
+                    <h4>Autonomous Rapid Velocity</h4>
+                    <p>Leveraging cutting-edge AI pair engineering and disciplined architecture to build in days what traditionally took whole corporate teams months.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Quantum Pulse Lab -->
+    <section id="interactive-lab" class="section">
+        <div class="container">
+            <div class="section-title-wrap">
+                <span class="sub-tag">INTERACTIVE EXPERIMENT</span>
+                <h2>Quantum Pulse Field Generator</h2>
+                <p>Interact with our real-time resonant wave field simulator. Adjust frequency and particle harmonics directly below.</p>
+            </div>
+
+            <div class="lab-container glass-panel">
+                <div class="lab-canvas-wrap">
+                    <canvas id="harmonic-canvas"></canvas>
+                </div>
+                <div class="lab-controls">
+                    <div class="control-row">
+                        <label for="freq-slider">Pulse Frequency: <span id="freq-val">2.4 Hz</span></label>
+                        <input type="range" id="freq-slider" min="0.5" max="6.0" step="0.1" value="2.4">
+                    </div>
+                    <div class="control-row">
+                        <label for="harm-slider">Harmonic Nodes: <span id="harm-val">4</span></label>
+                        <input type="range" id="harm-slider" min="1" max="10" step="1" value="4">
+                    </div>
+                    <div class="control-row">
+                        <label for="damping-slider">Quantum Damping: <span id="damping-val">0.05</span></label>
+                        <input type="range" id="damping-slider" min="0.01" max="0.2" step="0.01" value="0.05">
+                    </div>
+                    <button id="burst-pulse-btn" class="btn btn-sm btn-primary">Trigger Resonance Burst</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Studio About / Creator Banner -->
+    <section id="about" class="section section-dark">
+        <div class="container">
+            <div class="about-card glass-panel">
+                <div class="about-icon">⚡</div>
+                <div class="about-content">
+                    <span class="sub-tag">THE FOUNDER & VISION</span>
+                    <h2>Engineered with Relentless Curiosity</h2>
+                    <p>
+                        QuantumPulse is powered by <strong>Pappu Virinchi</strong> (virinchi9), an independent developer and systems creator combining computer graphics, chemistry simulations, and artificial intelligence. Driven by building high-performance systems from scratch, QuantumPulse is proof that ambitious, high-tier software can be crafted by fearless creators.
+                    </p>
+                    <div class="about-socials">
+                        <a href="https://github.com/pappuvirinchi-lang" target="_blank" class="btn btn-sm btn-secondary">
+                            GitHub @pappuvirinchi-lang
+                        </a>
+                        <a href="https://virinchi9.itch.io" target="_blank" class="btn btn-sm btn-secondary">
+                            Itch.io @virinchi9
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col-main">
+                <div class="brand">
+                    <div class="quantum-symbol small">
+                        <span class="pulse-center"></span>
+                    </div>
+                    <span class="brand-name">QuantumPulse</span>
+                </div>
+                <p class="footer-tagline">
+                    Engineering high-performance 3D simulations, custom engines, and intelligent systems from first principles.
+                </p>
+            </div>
+
+            <div class="footer-nav-col">
+                <span class="col-head">Ventures</span>
+                <a href="https://pappuvirinchi-lang.github.io/ultimate-chemistry-sim/" target="_blank">Ultimate Chemistry Sim</a>
+                <a href="https://virinchi9.itch.io/ultimate-chemistry-simulator" target="_blank">Chem Sim on Itch.io</a>
+                <a href="#projects">Ultimate Game Engine</a>
+                <a href="#projects">Chemistry Warfare</a>
+            </div>
+
+            <div class="footer-nav-col">
+                <span class="col-head">Platform</span>
+                <a href="#philosophy">Engineering Philosophy</a>
+                <a href="#interactive-lab">Quantum Pulse Lab</a>
+                <a href="https://github.com/pappuvirinchi-lang" target="_blank">GitHub Projects</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bar">
+                <span>&copy; 2026 QuantumPulse. All rights reserved.</span>
+                <span>Crafted for the next generation of builders.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
